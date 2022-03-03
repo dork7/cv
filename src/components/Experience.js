@@ -77,7 +77,6 @@ const Experience = () => {
                 {exp.year}
               </Text>
               <Text
-                mb={6}
                 p={2}
                 fontSize={{ base: "sm", md: "md", lg: "md" }}
                 //   fontWeight="bold"
@@ -87,6 +86,18 @@ const Experience = () => {
                 w="75%"
               >
                 {exp.place}{" "}
+              </Text>
+              <Text
+                mb={6}
+                p={2}
+                fontSize={{ base: "sm", md: "md", lg: "md" }}
+                //   fontWeight="bold"
+                // color={useColorModeValue("brand.600", "gray.300")}
+
+                lineHeight="shorter"
+                w="75%"
+              >
+                {exp.description}{" "}
               </Text>
             </>
           );
