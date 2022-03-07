@@ -6,7 +6,7 @@
       "city": "Islamabad",
       "country": "Pakistan",
       "phone": "+923455293564",
-      "description": "I'm a Islamabad, Pakistan based MERN Stack Developer. Working as a Senior Full Stack Developer at ISSM.Ai",
+      "description": "MERN stack developer, working as a Senior Full-Stack Engineer at ISSM.Ai.",
       "profileImage":
         "https://media-exp1.licdn.com/dms/image/C4D03AQF1F6OPm1EQag/profile-displayphoto-shrink_800_800/0/1520105306337?e=1651708800&v=beta&t=erQe9F5RWT3Cl6Nw9C1M62czuP6PuCvrcl-PC1vjVEE",
       "links": {
@@ -15,6 +15,7 @@
         "linkedin": "https://www.linkedin.com/in/hamzameh",
         "github": "https://github.com/dork7"
       },
+      "_aboutMe": "Developer with 3+ years experience in developing PWA . Interested in the job where I can learn new technology stacks and enhance my skill set",
       "aboutMe": "Full Stack Developer with 3+ years experience in commercial application development. I’m focused, committed and capable of learning new technology stacks.",
   
       "resumeLink":
@@ -58,6 +59,7 @@
         "C/C++",
         "Qt",
         "Redux",
+        "React Query",
         "MapBox",
         "Google Maps",
         "Full Calendar",

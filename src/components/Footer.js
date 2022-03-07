@@ -8,10 +8,13 @@ const Footer = () => {
       bg={useColorModeValue("gray.50", "gray.900")}
       color={useColorModeValue("gray.700", "gray.200")}
     >
-      <Stack>
+      <Stack spacing={0}>
         <MediaLinks />
-        <Text fontSize="xs" color={"gray.500"} textAlign={"center"} pb={2}>
+        <Text fontSize="xs" color={"gray.500"} textAlign={"center"}>
           © 2022, All rights reserved
+        </Text>
+        <Text fontSize="xs" color={"gray.500"} textAlign={"center"} pb={2}>
+          If it's working, donot change it
         </Text>
       </Stack>
     </Box>
