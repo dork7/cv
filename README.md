@@ -1,4 +1,4 @@
-### <a href="https://dork7.github.io/cv/">My Resume</a>
+### <a href="https://cv.dork7.tk/">My Resume</a>
 
 ###
 
