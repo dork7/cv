@@ -107,6 +107,11 @@
       "link": "http://web.sublo.co/store/bbb"
     },
     {
+      "name": "Workcycle",
+      "description": "A system which allows the small businesses to manage their day-to-day sale, manage their inventory and procurement. Integration of web platform with fingerprint scanner for biometric attendance system. A configureale POS system to meet the business needs.",
+      "link": "https://workcycle.co/"
+    },
+    {
       "name": "NIFT EPayment",
       "description": "NIFT epay is an online payment platform, this project allows integration of NIFT ePay gateway with core banking system using micro-service architecture. Micro-services are responsible for validating users, generating OTP, and transferring funds from user account to respective bank account.",
       "link": ""
