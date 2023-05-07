@@ -10,7 +10,7 @@ const Skills = () => {
       columns={{ base: 1, md: 2 }}
       spacing={0}
       _after={{
-        bg: "brand.500",
+        bg: "bgColor",
         opacity: 0.25,
         pos: "absolute",
         top: 0,
@@ -39,7 +39,7 @@ const Skills = () => {
         pr={{ base: 4, lg: 12 }}
         pb={16}
 
-        // w="full"
+      // w="full"
       >
         {user?.skills?.map((skill, idx) => {
           return (
@@ -47,7 +47,7 @@ const Skills = () => {
               <Badge
                 // color={useColorModeValue("brand.600", "gray.300")}
                 // bgColor={useColorModeValue("gray.300", "brand.600")}
-                bg="gray.900"
+                bg="badgeColor"
                 // _dark={{ bg: "brand.600" }}
                 px={3}
                 py={1}

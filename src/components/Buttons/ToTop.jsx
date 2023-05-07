@@ -7,8 +7,7 @@ const ToTop = () => {
   return (
     <motion.div
       style={{
-        // width: 150,
-        // height: 150,
+
         position: "fixed",
         borderRadius: "30px",
         zIndex: 999,
@@ -28,14 +27,12 @@ const ToTop = () => {
       {" "}
       <Button
         zIndex={998}
-        // position={"fixed"}
-        // bottom="40px"
-        // right={"40px"}
         borderRadius="full"
         overflow={"hidden"}
         onClick={() => scroll.scrollToTop()}
+        backgroundColor={"mCarbon"}
       >
-        <BsArrowUpShort size="30px" color="#FF6347" />
+        <BsArrowUpShort size="30px" color='#FF6347' />
       </Button>
     </motion.div>
   );

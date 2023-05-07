@@ -103,11 +103,11 @@ const Splash = ({ downButtonClicked }) => {
             bg="none"
             borderRadius={20}
             overflow="hidden"
-            icon={<AiFillDownCircle size="45px" />}
+            icon={<AiFillDownCircle size="45px" color='mCarbon' />}
             onClick={downButtonClicked}
-            color="#FF6347"
+            color="mOrange"
             _hover={{
-              bg: "none",
+              backgroundColor: "none",
             }}
             _focus={{
               border: "none",

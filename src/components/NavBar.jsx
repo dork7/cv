@@ -31,14 +31,7 @@ const NavLink = ({ children, active, handleSetActive }) => {
       <Text
         px={2}
         py={1}
-        textColor={active === children.path ? "#FF6347" : "white"}
-        // textColor={
-        //   active === children.path
-        //     ? "#FF6347"
-        //     : active !== "home"
-        //     ? useColorModeValue("black.100", "white.900")
-        //     : "white"
-        // }
+        textColor={active === children.path ? "mOrange" : "white"}
         fontFamily="sans-serif"
         fontWeight={"600"}
         cursor="pointer"

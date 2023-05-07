@@ -21,7 +21,7 @@ const About = () => {
       columns={{ base: 1, md: 2 }}
       spacing={0}
       _after={{
-        bg: "brand.500",
+        bg: "bgColor",
         opacity: 0.25,
         pos: "absolute",
         top: 0,
@@ -56,12 +56,12 @@ const About = () => {
         pr={{ base: 4, lg: 12 }}
         py={16}
 
-        // w="full"
+      // w="full"
       >
         <Badge
           // color={useColorModeValue("brand.600", "gray.300")}
           // bgColor={useColorModeValue("gray.300", "brand.600")}
-          bg="gray.900"
+          bg="badgeColor"
           px={3}
           py={1}
           mb={3}
@@ -87,7 +87,7 @@ const About = () => {
             <Badge
               // color={useColorModeValue("brand.600", "gray.300")}
               // bgColor={useColorModeValue("gray.300", "brand.600")}
-              bg="gray.900"
+              bg="badgeColor"
               px={3}
               py={1}
               mb={3}
@@ -100,16 +100,16 @@ const About = () => {
             <Stack spacing={1} p={2}>
               <Text>{user.name}</Text>
               <Text>{user.address}</Text>
-              <Text>
-                {user.city} {user.country}
-              </Text>
               <Text>{user.phone}</Text>
               <Text>{user.email}</Text>
+              <Text>
+                {user.city}, {user.country}
+              </Text>
             </Stack>
           </Box>
 
           <Link href={user.resumeLink} isExternal p={2}>
-            <Button>Download Resume</Button>
+            <Button backgroundColor={"badgeColor"}>Download Resume</Button>
           </Link>
         </Flex>
       </Flex>

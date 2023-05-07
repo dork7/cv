@@ -11,7 +11,7 @@ import React from "react";
 const ProjectCard = ({ project }) => {
   return (
     <Flex
-      bg={useColorModeValue("white", "gray.800")}
+      bg={useColorModeValue("white", "projectCardColor")}
       m={8}
       //   w="600px"
       rounded="lg"
@@ -21,12 +21,12 @@ const ProjectCard = ({ project }) => {
       <Flex
         maxW="md"
         mx="auto"
-        bg={useColorModeValue("white", "gray.800")}
+        bg={useColorModeValue("white", "projectCardColor")}
         shadow="2xl"
         rounded="lg"
         overflow="hidden"
         zIndex={200}
-        // w="600px"
+      // w="600px"
       >
         {/* <Box
           w={1 / 3}
@@ -41,7 +41,7 @@ const ProjectCard = ({ project }) => {
           <chakra.h1
             fontSize="2xl"
             fontWeight="bold"
-            color={useColorModeValue("gray.800", "white")}
+            color={useColorModeValue("projectCardColor", "white")}
           >
             {project.name}
           </chakra.h1>

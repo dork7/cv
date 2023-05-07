@@ -62,7 +62,7 @@ const FloatingButton = () => {
                         style={iconStyle}
                     >
                         <Link href={links.linkedin} isExternal>
-                            <Icon as={FiLinkedin} color="#FF6347" />
+                            <Icon as={FiLinkedin} color='mOrange' />
                         </Link>
                     </Action>
                 )}
@@ -72,7 +72,7 @@ const FloatingButton = () => {
                         style={iconStyle}
                     >
                         <Link href={links.github} isExternal>
-                            <Icon as={FaGithub} w={6} h={6} color="#FF6347" />
+                            <Icon as={FaGithub} w={6} h={6} color='mOrange' />
                         </Link>
                     </Action>
                 )}
@@ -82,7 +82,7 @@ const FloatingButton = () => {
                         style={iconStyle}
                     >
                         <Link href={links.facebook} isExternal>
-                            <Icon as={FaFacebookF} w={6} h={6} color="#FF6347" />
+                            <Icon as={FaFacebookF} w={6} h={6} color='mOrange' />
                         </Link>{' '}
                     </Action>
                 )}
@@ -92,7 +92,7 @@ const FloatingButton = () => {
                         style={iconStyle}
                     >
                         <Link href={links.instagram} isExternal>
-                            <Icon as={FaInstagram} w={6} h={6} color="#FF6347" />
+                            <Icon as={FaInstagram} w={6} h={6} color='mOrange' />
                         </Link>{' '}
                     </Action>
                 )}
