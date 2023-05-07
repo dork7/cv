@@ -14,7 +14,7 @@ const Footer = () => {
           © 2022, All rights reserved
         </Text>
         <Text fontSize="xs" color={"gray.500"} textAlign={"center"} pb={2}>
-          If it's working, donot change it
+          If it's working, do not touch it
         </Text>
       </Stack>
     </Box>

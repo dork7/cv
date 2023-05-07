@@ -15,6 +15,7 @@ import {
 import { useState } from "react";
 import { Link } from "react-scroll";
 import ToTop from "./Buttons/ToTop";
+import FloatingButton from './Buttons/FloatingButton';
 
 const NavLink = ({ children, active, handleSetActive }) => {
   return (
@@ -142,8 +143,8 @@ const NavBar = (navChange) => {
         ) : null}
       </Box>
       {active !== "home" && <ToTop />}
+      {active !== "home" && <FloatingButton />}
 
-      {/* <Box p={4}>Main Content Here</Box> */}
     </>
   );
 };
