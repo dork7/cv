@@ -97,8 +97,8 @@ const About = () => {
             </Stack>
           </Box>
 
-          <Link href={user.resumeLink} isExternal p={2}>
-            <Button backgroundColor={"badgeColor"}>Download Resume</Button>
+          <Link href={user.resumeLink} isExternal  >
+            <Button variant='none' color={useColorModeValue("bgColorLight", "badgeColor")} backgroundColor={useColorModeValue("badgeColor", "bgColorLight")}>Download Resume</Button>
           </Link>
         </Flex>
       </Flex>
