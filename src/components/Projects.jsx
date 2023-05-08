@@ -24,7 +24,7 @@ const Projects = () => {
           ))}
           {/* </HStack> */}
         </SimpleGrid>
-      </Box>
+      </Box >
     </>
   );
 };

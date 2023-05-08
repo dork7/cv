@@ -9,8 +9,6 @@ import { theme } from './config/theme';
 ReactDOM.render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
-      <ColorModeScript initialColorMode={'dark'} />
-
       <CV />
     </ChakraProvider>
   </React.StrictMode>,

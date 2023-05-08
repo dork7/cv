@@ -17,6 +17,9 @@ const ProjectCard = ({ project }) => {
       rounded="lg"
       alignItems="center"
       justifyContent="center"
+      _hover={{
+        bgColor: 'white'
+      }}
     >
       <Flex
         maxW="md"
