@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Box, useColorModeValue } from "@chakra-ui/react";
 import React, { useEffect } from "react";
 import { animateScroll as scroll, Element, scroller } from "react-scroll";
 import About from "./components/About";
@@ -12,7 +12,7 @@ import Splash from "./components/Splash";
 
 const CV = () => {
   useEffect(() => {
-    scroll.scrollToTop();
+    // scroll.scrollToTop();
   }, []);
 
   const navChange = (navLink) => {
@@ -35,7 +35,7 @@ const CV = () => {
   return (
     <>
       <NavBar {...{ navChange }} />
-      <Box>
+      <Box bgColor={useColorModeValue("bgColorLight", "bgColor")}>
         {/* <Button onClick={scrollTo}>go to 3</Button>
         <Button onClick={scrollToWithContainer}>multi</Button> */}
         <Element name="home" className="element">

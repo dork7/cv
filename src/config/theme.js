@@ -14,8 +14,11 @@ export const theme = extendTheme({
         mOrange: '#FF6347',
         mCarbon: '#2b2b2b',
         bgColor: '#2b2b2b',
+        bgColorLight: '#ECECEC',
         projectCardColor: '#4D4D4D',
-        badgeColor: '#4D4D4D'
+        badgeColor: '#4D4D4D',
+        footerColor: '#232323',
+        floatBtnClr: '',
 
     },
 })

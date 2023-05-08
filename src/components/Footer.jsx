@@ -5,7 +5,7 @@ const Footer = () => {
     <Box
       pt={4}
       mt={22}
-      bg={useColorModeValue("gray.50", "bgColor")}
+      bg={useColorModeValue("gray.50", "footerColor")}
       color={useColorModeValue("gray.700", "gray.200")}
     >
       <Stack spacing={0}>

@@ -115,7 +115,11 @@ const About = () => {
           </Box>
 
           <Link href={user.resumeLink} isExternal p={2}>
-            <Button>Download Resume</Button>
+            <Button ><Text color={useColorModeValue("gray.100", "gray.200")}
+            >
+              Download Resume
+            </Text>
+            </Button>
           </Link>
         </Flex>
       </Flex>

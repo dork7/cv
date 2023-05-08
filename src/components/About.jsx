@@ -20,17 +20,6 @@ const About = () => {
     <SimpleGrid
       columns={{ base: 1, md: 2 }}
       spacing={0}
-      _after={{
-        bg: "bgColor",
-        opacity: 0.25,
-        pos: "absolute",
-        top: 0,
-        left: 0,
-        bottom: 0,
-        right: 0,
-        zIndex: -1,
-        content: '" "',
-      }}
       px={2}
     >
       {" "}
