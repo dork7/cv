@@ -17,11 +17,9 @@ const ProjectCard = ({ project }) => {
       rounded="lg"
       alignItems="center"
       justifyContent="center"
-      _hover={{
-        bgColor: 'white'
-      }}
+
     >
-      <Flex
+      {/* <Flex
         maxW="md"
         mx="auto"
         bg={useColorModeValue("white", "projectCardColor")}
@@ -30,8 +28,8 @@ const ProjectCard = ({ project }) => {
         overflow="hidden"
         zIndex={200}
       // w="600px"
-      >
-        {/* <Box
+      > */}
+      {/* <Box
           w={1 / 3}
           bgSize="cover"
           style={{
@@ -40,34 +38,34 @@ const ProjectCard = ({ project }) => {
           }}
         ></Box> */}
 
-        <Box p={{ base: 4, md: 4 }}>
-          <chakra.h1
-            fontSize="2xl"
-            fontWeight="bold"
-            color={useColorModeValue("projectCardColor", "white")}
-          >
-            {project.name}
-          </chakra.h1>
+      <Box p={{ base: 4, md: 4 }}>
+        <chakra.h1
+          fontSize="2xl"
+          fontWeight="bold"
+          color={useColorModeValue("projectCardColor", "white")}
+        >
+          {project.name}
+        </chakra.h1>
 
-          <chakra.p
-            mt={2}
-            fontSize="sm"
-            color={useColorModeValue("gray.600", "gray.400")}
-            noOfLines={4}
-          >
-            {project.description}
-          </chakra.p>
-          {project.link !== "" && (
-            <Flex mt={3} alignItems="center" justifyContent="flex-end">
-              <Link href={project.link} isExternal>
-                <Text fontSize="xs" color={"gray.500"}>
-                  Link
-                </Text>
-              </Link>
-            </Flex>
-          )}
-        </Box>
-      </Flex>
+        <chakra.p
+          mt={2}
+          fontSize="sm"
+          color={useColorModeValue("gray.600", "gray.400")}
+          noOfLines={4}
+        >
+          {project.description}
+        </chakra.p>
+        {project.link !== "" && (
+          <Flex mt={3} alignItems="center" justifyContent="flex-end">
+            <Link href={project.link} isExternal>
+              <Text fontSize="xs" color={"gray.500"}>
+                Link
+              </Text>
+            </Link>
+          </Flex>
+        )}
+      </Box>
+      {/* </Flex> */}
     </Flex>
   );
 };
