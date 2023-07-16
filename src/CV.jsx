@@ -16,7 +16,6 @@ const CV = () => {
   }, []);
 
   const navChange = (navLink) => {
-    console.log("navLink", navLink);
     // scroller.scrollTo(navLink.split("/")[1], {
     //   duration: 800,
     //   delay: 0,

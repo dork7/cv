@@ -38,7 +38,10 @@ const Info = () => {
             borderRadius={44}
           >
             <Heading fontSize={{ base: "2xl", md: "4xl", lg: "6xl" }}>
-              I'm {user.name}.
+              <span className="grd-txt">
+                I'm{' '}
+              </span>
+              {user.name}.
             </Heading>
             <Text
               fontSize={{ base: "md", lg: "xl" }}

@@ -1,0 +1,19 @@
+.grd-txt {
+    color: transparent;
+    background: linear-gradient(to left, #e6d114, #e09e2c, #76dd2c, #dba62b, #e02cbf, #99801e);
+    background-size: 1000px 100%;
+    animation: gradient 90s linear infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 10000px;
+    }
+}
