@@ -1,14 +1,14 @@
 import { Box, useColorModeValue } from "@chakra-ui/react";
 import React, { useEffect } from "react";
 import { animateScroll as scroll, Element, scroller } from "react-scroll";
-import About from "./components/About";
-import Experience from "./components/Experience";
-import Footer from "./components/Footer";
-import NavBar from "./components/NavBar";
-import Projects from "./components/Projects";
-import Resume from "./components/Resume";
-import Skills from "./components/Skills";
-import Splash from "./components/Splash";
+import About from "./legacy/components/About";
+import Experience from "./legacy/components/Experience";
+import Footer from "./legacy/components/Footer";
+import NavBar from "./legacy/components/NavBar";
+import Projects from "./legacy/components/Projects";
+import Resume from "./legacy/components/Resume";
+import Skills from "./legacy/components/Skills";
+import Splash from "./legacy/components/Splash";
 
 const CV = () => {
   useEffect(() => {

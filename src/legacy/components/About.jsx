@@ -11,7 +11,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import React from "react";
-import { useUserDataSet } from "../hooks/useUserDataSet";
+import { useUserDataSet } from "../../hooks/useUserDataSet";
 
 const About = () => {
   const user = useUserDataSet();

@@ -1,14 +1,15 @@
 import { Badge, Box, Flex, SimpleGrid, Text } from "@chakra-ui/react";
 import React from "react";
-import { useUserDataSet } from "../hooks/useUserDataSet";
+import { useUserDataSet } from "../../hooks/useUserDataSet";
 
-const Experience = () => {
+const Resume = () => {
   const user = useUserDataSet();
 
   return (
     <SimpleGrid
       columns={{ base: 1, md: 2 }}
       spacing={0}
+      pt={16}
       px={2}
     >
       {" "}
@@ -19,7 +20,7 @@ const Experience = () => {
         px={16}
       >
         <Text as="u" fontSize={{ base: "md", md: "lg", lg: "xl" }}>
-          Work
+          Education
         </Text>
       </Box>
       <Flex
@@ -27,8 +28,10 @@ const Experience = () => {
         alignItems="start"
         justifyContent="center"
         pr={{ base: 4, lg: 12 }}
+
+      // w="full"
       >
-        {user?.experience?.map((exp, idx) => {
+        {user?.education?.map((edu, idx) => {
           return (
             <>
               <Badge
@@ -42,39 +45,20 @@ const Experience = () => {
                 variant="solid"
                 colorScheme="brand"
                 rounded="full"
-                key={`exp-${idx}`}
+                key={`edu-${idx}`}
               >
-                {exp.designation}
+                {edu.title}
               </Badge>
               <Text
+                // mb={6}
                 px={2}
                 fontSize={{ base: "md", md: "lg", lg: "xl" }}
+                //   fontWeight="bold"
                 // color={useColorModeValue("brand.600", "gray.300")}
                 lineHeight="shorter"
                 w="75%"
               >
-                {exp.company}
-              </Text>
-              <Text
-                // mb={6}
-                pl={2}
-                fontSize={{ base: "sm", md: "sm", lg: "sm" }}
-                //   fontWeight="bold"
-                // color={useColorModeValue("brand.600", "gray.300")}
-                lineHeight="shorter"
-              >
-                {exp.year}
-              </Text>
-              <Text
-                p={2}
-                fontSize={{ base: "sm", md: "md", lg: "md" }}
-                //   fontWeight="bold"
-                // color={useColorModeValue("brand.600", "gray.300")}
-
-                lineHeight="shorter"
-                w="75%"
-              >
-                {exp.place}{" "}
+                {edu.degree} {edu.year}
               </Text>
               <Text
                 mb={6}
@@ -82,11 +66,10 @@ const Experience = () => {
                 fontSize={{ base: "sm", md: "md", lg: "md" }}
                 //   fontWeight="bold"
                 // color={useColorModeValue("brand.600", "gray.300")}
-
                 lineHeight="shorter"
                 w="75%"
               >
-                {exp.description}{" "}
+                {edu.place}{" "}
               </Text>
             </>
           );
@@ -96,4 +79,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Resume;

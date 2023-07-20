@@ -6,7 +6,7 @@ import {
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa";
-import { useUserDataSet } from "../hooks/useUserDataSet";
+import { useUserDataSet } from "../../hooks/useUserDataSet";
 
 const MediaLinks = () => {
   const { links } = useUserDataSet();
