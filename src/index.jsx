@@ -8,9 +8,9 @@ import '../style.css'
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <span className="grd-txt">lol</span> */}
     <ChakraProvider theme={theme}>
       <CV />
+      Fresh start
     </ChakraProvider>
   </React.StrictMode>,
   document.getElementById("root")

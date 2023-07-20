@@ -10,7 +10,7 @@ import {
 } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import { AiFillDownCircle } from "react-icons/ai";
-import { useUserDataSet } from "../hooks/useUserDataSet";
+import { useUserDataSet } from "../../hooks/useUserDataSet";
 import Info from "./Cards/Info";
 const Splash = ({ downButtonClicked }) => {
   const { bgImage } = useUserDataSet();
