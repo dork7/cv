@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "poppins";
+}
+
+
 .grd-txt {
     color: transparent;
     background: linear-gradient(to left, #e6d114, #e09e2c, #76dd2c, #dba62b, #e02cbf, #99801e);
