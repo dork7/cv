@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import useIntersectionObserver from './../hooks/useIntersectionObserver'
 import { useState } from 'react';
 import { useRef } from 'react';
+import Hamster from '../components/Hamster';
 
 const CVPage = () => {
 
@@ -12,7 +13,6 @@ const CVPage = () => {
             <div className="main-section">
                 <div data-section id="section-1"
                     className="top-main-section show" ref={setSectionRef(0)}>
-                    this is a section
                 </div>
                 <div data-section id="section-2" ref={setSectionRef(1)}>
                     this is a section2

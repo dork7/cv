@@ -15,7 +15,6 @@ const useIntersectionObserver = () => {
                         // match the section ID with sectionRef id and add show class to it
                         const [sectionToShow] = sectionRefs.current.filter(item => item.id === entry.target.dataset.sectionToShow)
                         sectionToShow?.classList.add("show")
-                        break
                     }
                 });
             },
@@ -46,7 +45,6 @@ const useIntersectionObserver = () => {
     const setSectionRef = (index) => (ref) => {
         sectionRefs.current[index] = ref;
     }
-    console.log('sectionRefs', sectionRefs)
     return [setRef, setSectionRef]
 };
 
