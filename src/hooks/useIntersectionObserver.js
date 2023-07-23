@@ -6,13 +6,17 @@ const useIntersectionObserver = () => {
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
-                    console.log('entry', entry.target.dataset.imgToShow, entry.isIntersecting)
                     if (entry.isIntersecting) {
-                        document.querySelectorAll("[data-img]").forEach(img => {
+                        // console.log('entry', entry.target.dataset.imgToShow)
+                        document.querySelectorAll("[data-section]").forEach(img => {
+                            console.log('img', img)
                             img.classList.remove("show")
                         })
-                        const img = document.querySelector(entry.target.dataset.imgToShow)
+                        console.log('entry.target.dataset', entry.target.dataset)
+                        const img = document.querySelector(entry.target.dataset.sectionToShow)
                         img?.classList.add("show")
+
+                        // entry.target.current.classList.add("show")
                         // break
                     }
                 });

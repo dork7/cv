@@ -81,11 +81,12 @@ h1 {
             rgb(189, 194, 194, var(--background-opacity)) 100%);
 }
 
-.imgs>.top-section-img {
+.main-section>.top-main-section {
     /* (oldVal - oldMin) * newRange / oldRange + newMin */
     --value: min(var(--scroll), 30) * 50 / 30;
     width: calc(50vw + 1vw * var(--value));
     transform: translateY(calc(50% - 1% * var(--value)));
+
 }
 
 @media (width <=1000px) {
@@ -105,7 +106,7 @@ h1 {
         font-size: 72px;
     }
 
-    .imgs>.top-section-img {
+    .main-section>.top-main-section {
         width: 100vw;
     }
 }
@@ -126,20 +127,22 @@ h1 {
     padding-top: 10vh;
 }
 
-.imgs>* {
+.main-section>* {
+    background-color: blanchedalmond;
     position: fixed;
     width: 100vw;
+    height: 50vh;
     bottom: 0;
     z-index: 10;
     translate: 0 100%;
     transition: translate 250ms ease-in-out;
 }
 
-.imgs>.show {
+.main-section>.show {
     translate: 0 0;
 }
 
-[data-img-to-show] {
+[data-section-to-show] {
     position: absolute;
     top: 20%;
 }
