@@ -3,7 +3,7 @@ import useIntersectionObserver from './../hooks/useIntersectionObserver'
 import { useState } from 'react';
 import { useRef } from 'react';
 import Hamster from '../components/Hamster';
-
+import Loader from '../components/Loader'
 const CVPage = () => {
 
     const [setRef, setSectionRef] = useIntersectionObserver()
