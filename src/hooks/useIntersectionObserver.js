@@ -2,22 +2,20 @@ import { useEffect, useState, useRef } from 'react';
 
 const useIntersectionObserver = () => {
     const targetRefs = useRef([]);
+    const sectionRefs = useRef([]);
     useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        // console.log('entry', entry.target.dataset.imgToShow)
-                        document.querySelectorAll("[data-section]").forEach(img => {
-                            console.log('img', img)
-                            img.classList.remove("show")
+                        // remove the show class from every section, when intersect is true
+                        sectionRefs.current.forEach((section) => {
+                            section.classList.remove('show')
                         })
-                        console.log('entry.target.dataset', entry.target.dataset)
-                        const img = document.querySelector(entry.target.dataset.sectionToShow)
-                        img?.classList.add("show")
-
-                        // entry.target.current.classList.add("show")
-                        // break
+                        // match the section ID with sectionRef id and add show class to it
+                        const [sectionToShow] = sectionRefs.current.filter(item => item.id === entry.target.dataset.sectionToShow)
+                        sectionToShow?.classList.add("show")
+                        break
                     }
                 });
             },
@@ -45,7 +43,11 @@ const useIntersectionObserver = () => {
         targetRefs.current[index] = ref;
     };
 
-    return [setRef]
+    const setSectionRef = (index) => (ref) => {
+        sectionRefs.current[index] = ref;
+    }
+    console.log('sectionRefs', sectionRefs)
+    return [setRef, setSectionRef]
 };
 
 export default useIntersectionObserver;
