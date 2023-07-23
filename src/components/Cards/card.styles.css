@@ -1,0 +1,17 @@
+.card {
+    min-width: 290px;
+    height: 254px;
+    border-radius: 30px;
+    background: #212121;
+    color: white;
+    padding: 1rem;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card p {
+    font-size: 12px;
+    margin-bottom: 22px;
+}

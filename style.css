@@ -11,6 +11,12 @@
     font-family: "poppins";
 }
 
+a {
+    /* text-decoration: none; */
+    font-size: 11px;
+    color: rgb(195, 195, 195)
+}
+
 
 .grd-txt {
     color: transparent;
@@ -128,10 +134,10 @@ h1 {
 }
 
 .main-section>* {
-    background-color: blanchedalmond;
+    background-color: rgb(255, 255, 255);
     position: fixed;
     width: 100vw;
-    height: 60vh;
+    height: 50vh;
     bottom: 0;
     z-index: 10;
     translate: 0 100%;

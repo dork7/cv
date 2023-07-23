@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useRef } from 'react';
 import Hamster from '../components/Hamster';
 import Loader from '../components/Loader'
+import CardComponents from '../components/Cards/Cards.component';
 const CVPage = () => {
 
     const [setRef, setSectionRef] = useIntersectionObserver()
@@ -13,6 +14,7 @@ const CVPage = () => {
             <div className="main-section">
                 <div data-section id="section-1"
                     className="top-main-section show" ref={setSectionRef(0)}>
+                    <CardComponents />
                 </div>
                 <div data-section id="section-2" ref={setSectionRef(1)}>
                     this is a section2
