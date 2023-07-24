@@ -7,8 +7,24 @@
 
 .about-container .section {
     display: flex;
+    flex-direction: column;
     height: 100%;
     width: 70%;
-    justify-content: center;
+    justify-content: space-around;
     align-content: center;
+}
+
+.experience-section {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+}
+
+.experience-section .card {
+    height: 8rem;
+    width: 20rem;
+}
+
+.experience-section .card p {
+    margin: 0;
 }

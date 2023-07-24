@@ -1,6 +1,6 @@
 import React from 'react'
 import BtnPrimary from '../Button/btn-primary'
-
+import './skills.styles.css'
 const SkillsComponent = ({ skills }) => {
     return (
         <div className='skills-container'>
