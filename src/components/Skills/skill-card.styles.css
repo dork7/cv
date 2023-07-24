@@ -36,7 +36,7 @@
     justify-content: center;
     color: var(--default-btn-color);
     font: var(--font-weight) var(--font-size) var(--font-family);
-    background: var(--btn-default-bg);
+    background: var(--default-card-bg);
     border: none;
     cursor: pointer;
     transition: var(--btn-transition);

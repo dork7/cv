@@ -11,6 +11,10 @@
     font-family: "poppins";
 }
 
+:root {
+    --default-card-bg: #212121;
+}
+
 a {
     /* text-decoration: none; */
     font-size: 11px;

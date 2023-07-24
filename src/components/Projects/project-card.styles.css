@@ -2,7 +2,7 @@
     min-width: 290px;
     height: 254px;
     border-radius: 30px;
-    background: #212121;
+    background: var(--default-card-bg);
     color: white;
     padding: 1rem;
     overflow-y: scroll;
