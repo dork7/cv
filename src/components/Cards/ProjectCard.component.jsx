@@ -1,11 +1,10 @@
 import React from 'react'
-import './card.styles.css'
-const CardComponent = ({ project }) => {
+import './project-card.styles.css'
+const ProjectCardComponent = ({ project }) => {
     const { name, description, link } = project
     return (
         <>
-
-            <div class="card">
+            <div className="card">
                 <div>
                     {name}
                     <p>
@@ -18,4 +17,4 @@ const CardComponent = ({ project }) => {
     )
 }
 
-export default CardComponent
+export default ProjectCardComponent

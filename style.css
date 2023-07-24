@@ -92,7 +92,6 @@ h1 {
     --value: min(var(--scroll), 30) * 50 / 30;
     width: calc(50vw + 1vw * var(--value));
     transform: translateY(calc(50% - 1% * var(--value)));
-
 }
 
 @media (width <=1000px) {
@@ -142,6 +141,7 @@ h1 {
     z-index: 10;
     translate: 0 100%;
     transition: translate 250ms ease-in-out;
+    border-radius: 8px;
 }
 
 .main-section>.show {
