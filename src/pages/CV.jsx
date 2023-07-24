@@ -1,13 +1,13 @@
 import React from 'react';
-import ProjectCards from '../components/Cards/ProjectCards';
+import ProjectCards from '../components/Projects/ProjectCards';
 import { useUserDataSet } from '../hooks/useUserDataSet';
 import useIntersectionObserver from './../hooks/useIntersectionObserver';
 import MediaCard from '../components/Media';
+import SkillsComponent from '../components/Skills';
 const CVPage = () => {
 
     const userData = useUserDataSet()
-    const { name, description, projects } = userData
-
+    const { name, description, projects, skills } = userData
     const [setRef, setSectionRef] = useIntersectionObserver()
 
     return (
@@ -17,7 +17,7 @@ const CVPage = () => {
                     className="top-main-section show" ref={setSectionRef(0)}>
                 </div>
                 <div data-section id="section-2" ref={setSectionRef(1)}>
-                    this is a section2
+                    <SkillsComponent  {...{ skills }} />
                 </div>
                 <div data-section id="section-3" ref={setSectionRef(2)}>
                     <ProjectCards  {...{ projects }} />
@@ -42,7 +42,7 @@ const CVPage = () => {
                 </div>
             </section>
             <section className="full-screen-section">
-                <h1>Full Stack</h1>
+                <h1>Skills</h1>
                 <p>
                     Never manage infrastructure again. One click gets you: a database, APIs,
                     deployments, hosting, etc.
