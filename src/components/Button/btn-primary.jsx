@@ -1,13 +1,13 @@
 import React from 'react'
-import './skill-card.styles.css'
-const SkillCard = ({ skill }) => {
+import './btn-primary.styles.css'
+const BtnPrimary = ({ title }) => {
     return (
         <button class="ui-btn">
             <span>
-                {skill}
+                {title}
             </span>
         </button>
     )
 }
 
-export default SkillCard
+export default BtnPrimary

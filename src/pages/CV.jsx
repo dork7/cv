@@ -4,6 +4,7 @@ import { useUserDataSet } from '../hooks/useUserDataSet';
 import useIntersectionObserver from './../hooks/useIntersectionObserver';
 import MediaCard from '../components/Media';
 import SkillsComponent from '../components/Skills';
+import AboutComponent from '../components/About';
 const CVPage = () => {
 
     const userData = useUserDataSet()
@@ -15,6 +16,7 @@ const CVPage = () => {
             <div className="main-section">
                 <div data-section id="section-1"
                     className="top-main-section show" ref={setSectionRef(0)}>
+                    <AboutComponent {...{ userData }} />
                 </div>
                 <div data-section id="section-2" ref={setSectionRef(1)}>
                     <SkillsComponent  {...{ skills }} />
