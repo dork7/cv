@@ -1,12 +1,14 @@
-import React from 'react'
-import ProjectCardComponent from './ProjectCard.component'
 import { Flex } from '@chakra-ui/react'
+import React from 'react'
 import { useUserDataSet } from '../../hooks/useUserDataSet'
+import ProjectCardComponent from './ProjectCard.component'
+import './project-card.styles.css'
 
 const ProjectCards = ({ projects }) => {
     const userData = useUserDataSet()
     return (
-        <Flex gap='4rem' overflowY={"scroll"} marginX={"2rem"} alignItems={"center"} height="100%">
+
+        <div className='project-container' >
             {
                 projects?.map((project, idx) => {
                     return (<ProjectCardComponent key={idx} {...{ project }} />
@@ -14,7 +16,8 @@ const ProjectCards = ({ projects }) => {
                 })
             }
 
-        </Flex >
+        </div >
+
     )
 }
 

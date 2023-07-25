@@ -1,5 +1,4 @@
 import React from 'react'
-import './project-card.styles.css'
 const ProjectCardComponent = ({ project }) => {
     const { name, description, link } = project
     return (

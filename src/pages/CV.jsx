@@ -5,6 +5,7 @@ import useIntersectionObserver from './../hooks/useIntersectionObserver';
 import MediaCard from '../components/Media';
 import SkillsComponent from '../components/Skills';
 import AboutComponent from '../components/About';
+import Footer from '../components/Footer';
 const CVPage = () => {
 
     const userData = useUserDataSet()
@@ -24,6 +25,8 @@ const CVPage = () => {
                 <div data-section id="section-3" ref={setSectionRef(2)}>
                     <ProjectCards  {...{ projects }} />
                 </div>
+                {/* <div data-section id="section-4" ref={setSectionRef(3)}>
+                </div> */}
             </div>
 
 
@@ -59,6 +62,9 @@ const CVPage = () => {
                 <div data-section-to-show="section-3" ref={setRef(3)}
                 ></div>
             </section>
+            {/* <section className="full-screen-section">
+                <div data-section-to-show="section-4" ref={setRef(4)}></div>
+            </section> */}
         </>
     )
 }

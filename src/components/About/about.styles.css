@@ -28,3 +28,7 @@
 .experience-section .card p {
     margin: 0;
 }
+
+.about-container .section>p {
+    /* font-size: 1.2rem; */
+}

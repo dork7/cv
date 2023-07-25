@@ -1,13 +1,14 @@
 import React from 'react'
 import './about.styles.css'
 const AboutComponent = ({ userData }) => {
-    const { aboutMe, experience } = userData
+    const { aboutMe, aboutMe2, experience } = userData
     return (
         <div className='about-container'>
             <div className="section">
-                <div>
+                <p>
                     {aboutMe}
-                </div>
+
+                </p>
                 <div className='experience-section'>
                     {
                         experience.map(({
