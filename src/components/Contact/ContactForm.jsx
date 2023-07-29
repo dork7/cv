@@ -28,7 +28,7 @@ const ContactForm = () => {
         <div><div className="form-container">
             <form className="form" onSubmit={onSubmitHandler} id="form">
                 <div className="form-group">
-                    <label for="email">Email</label>
+                    <label htmlFor="email">Email</label>
                     <input ref={emailRef} type="text" id="email" name="email" placeholder="Enter your email" required="" />
                 </div>
                 <div className="form-group">

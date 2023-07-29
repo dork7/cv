@@ -6,7 +6,7 @@ const SkillsComponent = ({ skills }) => {
         <div className='skills-container'>
             {skills.map((skill, idx, array) => {
                 return (
-                    <BtnPrimary title={skill} />
+                    <BtnPrimary key={idx} title={skill} />
                 )
             })}
         </div >
