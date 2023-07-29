@@ -18,6 +18,9 @@
     display: flex;
     gap: 1rem;
     justify-content: space-around;
+    flex-wrap: wrap;
+    overflow: scroll;
+
 }
 
 .experience-section .card {
