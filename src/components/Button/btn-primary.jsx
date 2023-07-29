@@ -2,7 +2,7 @@ import React from 'react'
 import './btn-primary.styles.css'
 const BtnPrimary = ({ title }) => {
     return (
-        <button class="ui-btn">
+        <button className="ui-btn">
             <span>
                 {title}
             </span>

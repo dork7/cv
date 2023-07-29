@@ -7,6 +7,8 @@ import SkillsComponent from '../components/Skills';
 import AboutComponent from '../components/About';
 import Footer from '../components/Footer';
 import ContactSection from '../components/Contact';
+import './style.css'
+
 const CVPage = () => {
 
     const userData = useUserDataSet()
