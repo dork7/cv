@@ -7,7 +7,11 @@ const AboutComponent = ({ userData }) => {
             <div className="section">
                 <p>
                     {aboutMe}
-
+                </p>
+                <p style={{
+                    textAlign: "center"
+                }}>
+                    Experience
                 </p>
                 <div className='experience-section'>
                     {

@@ -7,17 +7,20 @@
   "country": "UAE",
   "phone": "Phone | +923455293564 | +971562737710",
   "_description": "MERN stack developer, working as a Software Engineer at Techvista Systems",
-  "description": "I build interactive web sites",
+  "description": "Code, Coffee, and Chuckles: A Developer's Daily Brew",
   "profileImage": "https://media.licdn.com/dms/image/C4D03AQF1F6OPm1EQag/profile-displayphoto-shrink_400_400/0/1520105306337?e=1686787200&v=beta&t=kbL0IzX2BJLIKAPUYi5Umu-a90LRWTR1pyb6_vI0Vxg",
   "links": {
     "facebook": "#",
     "instagram": "#",
     "linkedin": "https://www.linkedin.com/in/hamzameh",
-    "github": "https://github.com/dork7"
+    "github": "https://github.com/dork7",
+    "fiverr": "https://www.fiverr.com/users/its_coderman",
+    "whatsapp": "https://wa.me/923455293564"
   },
   "_aboutMe": "Developer with 5 years experience in developing PWA . Interested in the job where I can learn new technology stacks and enhance my skill set",
   "__aboutMe": "Full Stack Developer with 5 years experience in commercial application development. I’m focused, committed and capable of learning new technology stacks.",
-  "aboutMe": "I'm a full stack engineer with over 5 years of experience of working in a variety of domains and frameworks, majorly JS based. Whenever possible, I also apply my passion for exploring Node.js and Modern Javascript Library and Frameworks like React.js and Next.js",
+  "aboutMe": "My journey as a web developer has been a thrilling adventure, and along the way, I've accumulated a diverse range of skills that make up my creative toolkit.",
+  "aboutMeSubHeading": "A person driven by curiosity, thrives on the pursuit of knowledge.",
   "resumeLink": "https://docs.google.com/document/d/10TQW5DFaCBblLXA0mmYlnJmzKexGyATfWRC6IUorYS4/edit?usp=sharing",
   "education": [
     {
@@ -56,18 +59,19 @@
       "year": "2018 - 2021"
     }
   ],
+  "skillsSubHeading": "Steadily filling my skillset, yet I know there's still a vast expanse of knowledge and growth waiting for me.",
   "skills": [
     "JavaScript",
     "Typescript",
     "Express",
     "ReactJs",
-    "NextJs",
     "Redux",
+    "NextJs",
     "React Query",
     "HTML/CSS",
     "SASS",
-    "MapBox",
     "Google Maps",
+    "MapBox",
     "Full Calendar",
     "PubNub",
     "camunda",
@@ -97,6 +101,7 @@
     "Github",
     "Gitlab"
   ],
+  "projectSubHeading": "Throughout the last 5 years, I've tackled an array of intricate projects spanning diverse domains.",
   "projects": [
     {
       "name": "TAMM Project",
@@ -153,5 +158,6 @@
       "description": "Built a React-based resume website template to allow other developers to download and create their own resume website by simply modifying a config file.",
       "link": "https://github.com/dork7/cv-template-react"
     }
-  ]
+  ],
+  "contactSubHeading": "Trying to reach me???"
 }

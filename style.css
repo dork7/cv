@@ -156,3 +156,8 @@ h1 {
     position: absolute;
     top: 20%;
 }
+
+
+.main-section>.contact-section {
+    height: 70vh;
+}

@@ -6,10 +6,11 @@ import MediaCard from '../components/Media';
 import SkillsComponent from '../components/Skills';
 import AboutComponent from '../components/About';
 import Footer from '../components/Footer';
+import ContactSection from '../components/Contact';
 const CVPage = () => {
 
     const userData = useUserDataSet()
-    const { name, description, projects, skills } = userData
+    const { name, description, projects, skills, aboutMeSubHeading, skillsSubHeading, projectSubHeading, contactSubHeading } = userData
     const [setRef, setSectionRef] = useIntersectionObserver()
 
     return (
@@ -25,8 +26,11 @@ const CVPage = () => {
                 <div data-section id="section-3" ref={setSectionRef(2)}>
                     <ProjectCards  {...{ projects }} />
                 </div>
-                {/* <div data-section id="section-4" ref={setSectionRef(3)}>
-                </div> */}
+                <div data-section className='contact-section' id="section-4" ref={setSectionRef(3)}>
+                    <ContactSection {...{ userData }} />
+                    <Footer />
+
+                </div>
             </div>
 
 
@@ -41,7 +45,7 @@ const CVPage = () => {
             </section>
             <section className="full-screen-section first-main-section">
                 <h1>About me</h1>
-                <p>Never touch the command line, from provision to production.</p>
+                <p>{aboutMeSubHeading}</p>
                 <div data-section-to-show="section-1" ref={setRef(0)}>
 
                 </div>
@@ -49,22 +53,23 @@ const CVPage = () => {
             <section className="full-screen-section">
                 <h1>Skills</h1>
                 <p>
-                    Never manage infrastructure again. One click gets you: a database, APIs,
-                    deployments, hosting, etc.
+                    {skillsSubHeading}
                 </p>
                 <div data-section-to-show="section-2" ref={setRef(1)}>
 
                 </div>
             </section>
             <section className="full-screen-section">
-                <h1>Projects</h1>
-                <p>Logical can get systems to market in minutes instead of weeks.</p>
+                <h1>My Work</h1>
+                <p>{projectSubHeading}</p>
                 <div data-section-to-show="section-3" ref={setRef(3)}
                 ></div>
             </section>
-            {/* <section className="full-screen-section">
+            <section className="full-screen-section">
+                <h1>Contact</h1>
+                <p>{contactSubHeading}</p>
                 <div data-section-to-show="section-4" ref={setRef(4)}></div>
-            </section> */}
+            </section>
         </>
     )
 }
