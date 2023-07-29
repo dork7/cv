@@ -1,0 +1,26 @@
+.card {
+    min-width: 290px;
+    height: 254px;
+    border-radius: 30px;
+    background: var(--default-card-bg);
+    color: white;
+    padding: 1rem;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card p {
+    font-size: 12px;
+    margin-bottom: 22px;
+}
+
+.project-container {
+    gap: 4rem;
+    overflow-y: scroll;
+    margin-inline: 2rem;
+    align-items: center;
+    height: 100%;
+    display: flex;
+}

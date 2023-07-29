@@ -11,6 +11,16 @@
     font-family: "poppins";
 }
 
+:root {
+    --default-card-bg: #212121;
+}
+
+a {
+    /* text-decoration: none; */
+    font-size: 11px;
+    color: rgb(195, 195, 195)
+}
+
 
 .grd-txt {
     color: transparent;
@@ -30,4 +40,124 @@
     100% {
         background-position-x: 10000px;
     }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #141616;
+    background-color: #e6e9ea;
+    font-size: 28px;
+}
+
+h1 {
+    font-size: 110px;
+    margin-bottom: 1rem;
+}
+
+.full-screen-section {
+    height: 100vh;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.top-section .left,
+.top-section .right {
+    flex-basis: 0;
+    flex-grow: 1;
+    padding: 1rem;
+    padding-left: 3rem;
+}
+
+.top-section {
+    display: flex;
+    text-align: start;
+    padding: 0;
+}
+
+.top-section .left {
+    background-color: rgb(248, 250, 249, var(--background-opacity));
+}
+
+.top-section .right {
+    background: linear-gradient(210.65deg,
+            rgb(152, 157, 157, var(--background-opacity)) 0%,
+            rgb(189, 194, 194, var(--background-opacity)) 100%);
+}
+
+.main-section>.top-main-section {
+    /* (oldVal - oldMin) * newRange / oldRange + newMin */
+    --value: min(var(--scroll), 30) * 50 / 30;
+    width: calc(50vw + 1vw * var(--value));
+    transform: translateY(calc(50% - 1% * var(--value)));
+}
+
+@media (width <=1000px) {
+    .top-section .right {
+        display: none;
+    }
+
+    .top-section .left {
+        text-align: center;
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 72px;
+    }
+
+    .main-section>.top-main-section {
+        width: 100vw;
+    }
+}
+
+:root {
+    --scroll: 0;
+}
+
+.top-section {
+    position: sticky;
+    top: 0;
+    /* (oldVal - oldMin) * newRange / oldRange + newMin */
+    translate: 0 calc(-1% * (max(var(--scroll), 25) - 25) * 100 / 75);
+    --background-opacity: calc(100% - 1% * min(var(--scroll), 30) * 100 / 30);
+}
+
+.first-main-section {
+    padding-top: 10vh;
+}
+
+.main-section>* {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    width: 100vw;
+    height: 50vh;
+    bottom: 0;
+    z-index: 10;
+    translate: 0 100%;
+    transition: translate 250ms ease-in-out;
+    border-radius: 8px;
+}
+
+.main-section>.show {
+    translate: 0 0;
+}
+
+[data-section-to-show] {
+    position: absolute;
+    top: 20%;
+}
+
+
+.main-section>.contact-section {
+    height: 60vh;
 }

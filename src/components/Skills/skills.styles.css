@@ -1,0 +1,10 @@
+.skills-container {
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    height: 100%;
+    padding: 2rem;
+    overflow: scroll;
+}
