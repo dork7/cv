@@ -4,6 +4,20 @@ const useIntersectionObserver = () => {
     const targetRefs = useRef([]);
     const sectionRefs = useRef([]);
     useEffect(() => {
+        window.addEventListener("scroll", setScrollVar)
+        window.addEventListener("resize", setScrollVar)
+
+        function setScrollVar() {
+            const htmlElement = document.documentElement
+            const percentOfScreenHeightScrolled =
+                htmlElement.scrollTop / htmlElement.clientHeight
+            // console.log(Math.min(percentOfScreenHeightScrolled * 100, 100))
+            htmlElement.style.setProperty(
+                "--scroll",
+                Math.min(percentOfScreenHeightScrolled * 100, 100)
+            )
+        }
+
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
@@ -30,6 +44,9 @@ const useIntersectionObserver = () => {
         }
 
         return () => {
+
+            window.removeEventListener("scroll", setScrollVar)
+            window.removeEventListener("resize", setScrollVar)
             targetRefs?.current?.forEach((targetRef) => {
                 if (targetRef) {
                     observer.unobserve(targetRef);

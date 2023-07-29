@@ -1,41 +1,18 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import AboutComponent from '../components/About';
+import ContactSection from '../components/Contact';
+import Footer from '../components/Footer';
 import ProjectCards from '../components/Projects/ProjectCards';
+import SkillsComponent from '../components/Skills';
 import { useUserDataSet } from '../hooks/useUserDataSet';
 import useIntersectionObserver from './../hooks/useIntersectionObserver';
-import MediaCard from '../components/Media';
-import SkillsComponent from '../components/Skills';
-import AboutComponent from '../components/About';
-import Footer from '../components/Footer';
-import ContactSection from '../components/Contact';
-import './style.css'
+import './style.css';
 
 const CVPage = () => {
 
     const userData = useUserDataSet()
     const { name, description, projects, skills, aboutMeSubHeading, skillsSubHeading, projectSubHeading, contactSubHeading } = userData
     const [setRef, setSectionRef] = useIntersectionObserver()
-
-    useEffect(() => {
-        window.addEventListener("scroll", setScrollVar)
-        window.addEventListener("resize", setScrollVar)
-
-        function setScrollVar() {
-            const htmlElement = document.documentElement
-            const percentOfScreenHeightScrolled =
-                htmlElement.scrollTop / htmlElement.clientHeight
-            // console.log(Math.min(percentOfScreenHeightScrolled * 100, 100))
-            htmlElement.style.setProperty(
-                "--scroll",
-                Math.min(percentOfScreenHeightScrolled * 100, 100)
-            )
-        }
-
-        return () => {
-            window.removeEventListener("scroll", setScrollVar)
-            window.removeEventListener("resize", setScrollVar)
-        }
-    }, [])
-
 
     return (
         <>
