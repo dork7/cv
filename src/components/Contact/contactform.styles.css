@@ -64,9 +64,18 @@
     opacity: 0.5;
 }
 
+.form-container .form-group textarea::placeholder {
+    opacity: 0.5;
+}
+
 .form-container .form-group input:focus {
     outline: none;
-    border-color: #1778f2;
+    border-color: #212121;
+}
+
+.form-container .form-group textarea:focus {
+    outline: none;
+    border-color: #212121;
 }
 
 .form-container .form-submit-btn {
