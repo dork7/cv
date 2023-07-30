@@ -19,7 +19,8 @@
     gap: 1rem;
     justify-content: space-around;
     flex-wrap: wrap;
-    overflow: scroll;
+    /* overflow: scroll; */
+    /* z-index: 999; */
 
 }
 
@@ -35,3 +36,16 @@
 .about-container .section>p {
     /* font-size: 1.2rem; */
 }
+
+/* .experience-section .card:hover {
+    transform: scale(1.1) translateY(-12px);
+}
+
+.experience-section .card:hover+.card {
+    transform: scale(1.0002) translateY(-3px);
+}
+
+
+.experience-section .card:has(+ .card:hover) {
+    transform: scale(1.0002) translateY(-3px);
+} */

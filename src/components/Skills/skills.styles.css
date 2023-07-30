@@ -3,8 +3,21 @@
     align-content: center;
     display: flex;
     flex-wrap: wrap;
-    gap: 2px;
+    gap: 6px;
     height: 100%;
     padding: 2rem;
     overflow: scroll;
+}
+
+.skills-btns:hover {
+    transform: scale(1.002) translateY(-5px);
+}
+
+.skills-btns:hover+.skills-btns {
+    transform: scale(1.0002) translateY(-1.5px);
+}
+
+
+.skills-btns:has(+ .skills-btns:hover) {
+    transform: scale(1.0002) translateY(-1.5px);
 }
