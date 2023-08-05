@@ -9,38 +9,40 @@ const AboutComponent = ({ userData }) => {
                     {aboutMe}
                 </p>
             </div>
-            <p style={{
-                textAlign: "center"
-            }}>
-                Experience
-            </p>
-            <div className='experience-section'>
-                {
-                    experience.map(({
-                        designation,
-                        company,
-                        place,
-                        description,
-                        year
-                    }) => {
-                        return (<div key={company} className="exp-card">
-                            <div>
-                                {company}
-                                <p>
-                                    {designation}
-                                </p>
-                                <p>
-                                    {place}
-                                </p>
-                                <p>
-                                    {year}
-                                </p>
-                            </div>
-                        </div>)
-                    })
-                }
-            </div>
 
+            <div>
+                <p style={{
+                    textAlign: "center"
+                }}>
+                    Experience
+                </p>
+                <div className='experience-section'>
+                    {
+                        experience.map(({
+                            designation,
+                            company,
+                            place,
+                            description,
+                            year
+                        }) => {
+                            return (<div key={company} className="exp-card">
+                                <div>
+                                    {company}
+                                    <p>
+                                        {designation}
+                                    </p>
+                                    <p>
+                                        {place}
+                                    </p>
+                                    <p>
+                                        {year}
+                                    </p>
+                                </div>
+                            </div>)
+                        })
+                    }
+                </div>
+            </div>
         </div >
     )
 }
