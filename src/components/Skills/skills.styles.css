@@ -4,7 +4,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
-    /* height: 80vh; */
+    /* height: 30rem; */
     padding: 2rem;
     /* overflow: scroll; */
 }

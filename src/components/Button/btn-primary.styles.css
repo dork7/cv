@@ -1,7 +1,7 @@
 /* TODO: set background as default color in main style file */
 .ui-btn {
     /* --btn-default-bg: #212121; */
-    --btn-padding: 15px 20px;
+    --btn-padding: 10px 15px;
     --btn-hover-bg: #212121;
     --btn-transition: .3s;
     --btn-letter-spacing: .1rem;
