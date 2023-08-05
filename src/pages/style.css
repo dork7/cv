@@ -13,6 +13,7 @@
 
 :root {
     --default-card-bg: #212121;
+    --card-font-color: #fff
 }
 
 a {

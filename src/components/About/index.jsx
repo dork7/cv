@@ -22,7 +22,7 @@ const AboutComponent = ({ userData }) => {
                             description,
                             year
                         }) => {
-                            return (<div key={company} className="card">
+                            return (<div key={company} className="exp-card">
                                 <div>
                                     {company}
                                     <p>
