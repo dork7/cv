@@ -22,6 +22,7 @@ const ContactSection = ({ userData }) => {
                 </div>
                 <ContactForm />
             </div>
+
         </>
     )
 }
