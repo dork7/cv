@@ -1,6 +1,6 @@
 .card {
     min-width: 290px;
-    height: 254px;
+    height: 70%;
     border-radius: 30px;
     background: var(--default-card-bg);
     color: white;

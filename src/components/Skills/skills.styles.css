@@ -4,9 +4,9 @@
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
-    height: 100%;
+    /* height: 80vh; */
     padding: 2rem;
-    overflow: scroll;
+    /* overflow: scroll; */
 }
 
 .skills-btns:hover {

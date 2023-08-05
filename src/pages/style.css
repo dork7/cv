@@ -135,6 +135,7 @@ h1 {
 
 .first-main-section {
     padding-top: 10vh;
+    /* height: 100vh; */
 }
 
 .main-section>* {
@@ -161,4 +162,16 @@ h1 {
 
 .main-section>.contact-section {
     height: 60vh;
+}
+
+@media (width <=1000px) {
+    /* .main-section>* {
+        height: 100vh;
+    }
+
+
+    .main-section>.contact-section {
+        height: 100vh;
+    } */
+
 }
