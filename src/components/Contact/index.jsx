@@ -9,16 +9,21 @@ const ContactSection = ({ userData }) => {
         <>
             <div className='contact-container'>
                 <div className='wrapper'>
-                    <MediaCard {...{ links }} />
-                    <span>
-                        {email}
-                    </span>
-                    <span>
-                        {phone}
-                    </span>
-                    <span>
-                        {city} , {country}
-                    </span>
+                    <div>
+                        <MediaCard {...{ links }} />
+                        <span>
+                            {email}
+                        </span>
+                        <span>
+                            {phone}
+                        </span>
+                        <span>
+                            {city} , {country}
+                        </span>
+                    </div>
+                    <div className='left-arrow'>
+                        {/* -> */}
+                    </div>
                 </div>
                 <ContactForm />
             </div>
