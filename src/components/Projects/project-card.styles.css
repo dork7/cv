@@ -1,12 +1,11 @@
 .card {
     min-width: 290px;
-    height: 70%;
+    height: 30vh;
     border-radius: 30px;
     background: var(--default-card-bg);
     color: white;
     padding: 1rem;
     overflow-y: scroll;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -26,6 +25,6 @@
     display: flex;
 }
 
-::-webkit-scrollbar {
+.card::-webkit-scrollbar {
     display: none;
 }
