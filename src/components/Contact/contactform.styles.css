@@ -80,7 +80,7 @@
 }
 
 .form-container .form-submit-btn {
-    max-height: 3rem;
+    /* max-height: 3rem; */
     display: flex;
     justify-content: center;
     align-items: center;

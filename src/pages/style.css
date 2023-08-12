@@ -161,7 +161,7 @@ h1 {
 
 
 .main-section>.contact-section {
-    height: 60vh;
+    /* height: 60vh; */
 }
 
 @media (width <=1000px) {
