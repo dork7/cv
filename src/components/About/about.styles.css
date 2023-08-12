@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: space-around;
     /* height: 100%; */
+    height: 50vh;
 }
 
 
@@ -11,8 +12,9 @@
 .experience-section {
     display: flex;
     gap: 1rem;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+
     /* overflow: scroll; */
     /* height: 100vh; */
 }
@@ -32,7 +34,14 @@
 
 @media (width <=1000px) {
 
+
+
     .about-container {
         font-size: 1.2rem;
+        height: 100vh;
+    }
+
+    .about-container>.section {
+        display: none;
     }
 }

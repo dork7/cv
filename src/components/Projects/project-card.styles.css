@@ -6,6 +6,7 @@
     color: white;
     padding: 1rem;
     overflow-y: scroll;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -23,4 +24,8 @@
     align-items: center;
     height: 100%;
     display: flex;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
